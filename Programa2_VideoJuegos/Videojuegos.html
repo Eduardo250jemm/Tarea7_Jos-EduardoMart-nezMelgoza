@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+
+<html>
+<head>
+	<title>
+		Leer XML
+	</title>
+	<meta charset="utf-8" >
+	<style type="text/css">
+	table, 
+	th, 
+	td{
+		border: 1px solid black; 
+		border: collapse: collapse; 	
+	}
+	th, 
+	td{
+		padding: 5px;
+	
+	}
+	</style>
+</head>
+
+<body>
+	<div id="texto">
+		<h1>Video Juegos</h1>
+		<button id="cargarCatalogo"> Ver video Juegos XML</button></br></br></br></br>
+	</div>
+
+	<table id="muestra"></table>
+	<script type="text/javascrip">
+		document.getElementById("cargarCatalogo").addEventListener("click", cargarCatalogo); 
+		function cargarCatalogo(){
+			var xhr = new XMLHttpRequest(); 
+			xhr.onreadystatechange = function(){
+				if(this.readyState == 4 && this.status == 200){
+					cargarXML(this);
+				}
+			}; 
+			
+			xhr.open("GET", "Videojuegos.xml", true); 
+			xhr.send();
+		
+		}
+		
+		function cargarXML(xml){
+			var docXML = xml.responseXML; 
+			var tabla = "<tr><th>title</th><th>author</th><th>year</th><th>price</th></tr>";
+			var cds = docXML.getElementsByTagName("videojuego");
+			for (var i =0; i<cds.length; i++){
+				tabla += "<tr><td>"; 
+				tabla += cds[i].getElementsByTagName("title")[0].textContent; 
+				tabla += "</td><td>";
+				tabla += cds[i].getElementsByTagName("author")[0].textContent; 
+				tabla += "</td><td>";
+				tabla += cds[i].getElementsByTagName("year")[0].textContent; 
+				tabla += "</td><td>";
+				tabla += cds[i].getElementsByTagName("price")[0].textContent; 
+				tabla += "</td></tr>";
+			
+			}
+			document.getElementById("muestra").innerHTML = tabla;
+		}
+	
+	</script>	
+</body>
+</html>

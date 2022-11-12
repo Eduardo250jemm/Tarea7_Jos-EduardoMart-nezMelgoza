@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<videogames>
+
+	<videojuego category = "Guerra">
+		<title lang ="en"> Call of duty</title>
+		<author>activicion e Infinity Ward</author>
+		<year>2007</year>
+		<price>1574</price>
+	</videojuego>
+	
+	<videojuego category = "Deporte">
+		<title lang ="en"> FIFA </title>
+		<author>Gianni Infantino</author>
+		<year>1904</year>
+		<price>443</price>
+	</videojuego>
+	
+	<videojuego category = "Guerra">
+		<title lang ="en"> Gears of War</title>
+		<author>Cliff Bleszinski</author>
+		<year>2008</year>
+		<price>629</price>
+	</videojuego>
+	
+	
+	<videojuego category = "Accion">
+		<title lang ="en"> Super Mario Bros</title>
+		<author>Shigeru Miyamoto</author>
+		<year>1983</year>
+		<price>297</price>
+	</videojuego>
+	
+	
+	<videojuego category = "Guerra y accion">
+		<title lang ="en"> Fornite</title>
+		<author>Epic Games</author>
+		<year>2017</year>
+		<price>Gratuito</price>
+	</videojuego>
+	
+	
+	<videojuego category = "Accion">
+		<title lang ="en"> Grand Theft Auto V</title>
+		<author> Rockstar Games</author>
+		<year>2013</year>
+		<price>999</price>
+	</videojuego>
+</videogames>

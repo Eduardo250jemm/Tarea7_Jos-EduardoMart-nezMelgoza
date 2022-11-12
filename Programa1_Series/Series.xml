@@ -1,0 +1,41 @@
+<Series>
+
+	<Serie>
+		<title> La casa de papel</title>
+		<author>Alex Pina</author>
+		<year>2017</year>
+	</Serie>
+	
+	<Serie>
+		<title> Lucifer estrella de la mañana </title>
+		<author>Neil Gaiman</author>
+		<year>2016</year>
+	</Serie>
+	
+	<Serie>
+		<title> Manifiesto </title>
+		<author>Jeff Rake</author>
+		<year>2018</year>
+	</Serie>
+	
+	
+	<Serie>
+		<title> El chapo</title>
+		<author>Silvana Aguirre Carlos Contreras</author>
+		<year>2017</year>
+	</Serie>
+	
+	
+	<Serie>
+		<title> Elite </title>
+		<author>Carlos Montero Darío Madrona</author>
+		<year>2018</year>
+	</Serie>
+	
+	
+	<Serie>
+		<title> el juego del calamar </title>
+		<author> Ojingeo Geim </author>
+		<year>2021</year>
+	</Serie>
+</Series>
